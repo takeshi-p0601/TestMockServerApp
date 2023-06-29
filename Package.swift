@@ -25,6 +25,9 @@ let package = Package(
                 .product(name: "Vapor", package: "vapor"),
             ],
             path: "Sources",
+            resources: [
+                .process("test.png")
+            ],
             plugins: [
                 .plugin(name: "OpenAPIGenerator", package: "swift-openapi-generator")
             ]
